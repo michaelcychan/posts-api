@@ -15,12 +15,12 @@ class ApiController < ApplicationController
     @response = RestClient.get "https://api.hatchways.io/assessment/blog/posts?#{parameters}", {content_type: :json, accept: :json}
     @posts = JSON.parse(@response.body)["posts"]
     # Now @posts is an array of hash
-    
-    @posts.each do |post|
-      puts "#{post}\n"
-    end
 
     @posts.sort_by! {|post| post["likes"] }.reverse!
+
+    if params[:minread]
+      @posts = @posts.filter {|post| post["reads"] > params[:minread].to_i}
+    end
 
     render json: @posts
   end
