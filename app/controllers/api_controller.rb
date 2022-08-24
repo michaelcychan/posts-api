@@ -10,6 +10,8 @@ class ApiController < ApplicationController
     parameters = ""
     if params[:tag]
       parameters += "tag=" + params[:tag]
+    else
+      parameters += "tag=tech"
     end
 
     @response = RestClient.get "https://api.hatchways.io/assessment/blog/posts?#{parameters}", {content_type: :json, accept: :json}
