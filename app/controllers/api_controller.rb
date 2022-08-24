@@ -24,6 +24,17 @@ class ApiController < ApplicationController
       @posts = @posts.filter {|post| post["reads"] > params[:minread].to_i}
     end
 
+    if params[:postCount]
+      posts_per_page = params[:postCount].to_i
+      page = 0
+      if params[:page]
+        page = params[:page].to_i
+      end
+      page = 1 if page < 1
+      head = (page - 1) * posts_per_page
+      @posts = @posts[head, posts_per_page]
+    end
+
     render json: @posts
   end
 end
