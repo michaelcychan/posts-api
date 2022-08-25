@@ -38,7 +38,7 @@ The termainal will now start the server
 ### Features
 Use your browser to open http://localhost:3000  
 
-<img src="./posts-api-1.png" width=750>
+<img src="./posts-api-1-new.png" width=750>
 
 If no tag parameter is given, a default tag: tech will be used. Different parameters can be added after ```http://localhost:3000/?```  
 
@@ -54,4 +54,4 @@ posts will be filtered with the minimum number of read
 only a certain number of posts is shown, if further posts is required, add ```?page=```
 
 Example: ```?tag=history&postCount=5&page=3```   
-<img src="./posts-api-2.png" width=750>
+<img src="./posts-api-2-new.png" width=750>
