@@ -1,0 +1,45 @@
+<%# Find me in app/views/api/show.html.erb %>
+
+<h1>parameters:</h1>
+<table>
+  <tr>
+    <th>?tag=</th>
+    <th>?minread=</th>
+    <th>?postCount=</th>
+    <th>?page=</th>
+  </tr>
+  <tr>
+    <td>tech, culture, health...</td>
+    <td>insert a minimum number of reads</td>
+    <td>insert posts to show each page</td>
+    <td>use with ?postCount parameter to show another page</td>
+  </tr>
+</table>
+<br><br>
+
+<% if posts != [] %>
+  <table>
+    <tr>
+      <th>Author</th>
+      <th>Author ID</th>
+      <th>Post ID</th>
+      <th>Likes</th>
+      <th>Popularity</th>
+      <th>Reads</th>
+      <th>Tags</th>
+    </tr>
+  <% posts.each do |post|%>
+    <tr>
+      <td><%= post["author"]%></td>
+      <td><%= post["authorId"]%></td>
+      <td><%= post["id"]%></td>
+      <td><%= post["likes"]%></td>
+      <td><%= post["popularity"]%></td>
+      <td><%= post["reads"]%></td>
+      <td><%= post["tags"]%></td>
+    </tr>
+    <%end%>
+  </table>
+<% else %>
+  <p>There is nothing to display, try other parameters</p>
+<% end %>

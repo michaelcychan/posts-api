@@ -35,6 +35,6 @@ class ApiController < ApplicationController
       @posts = @posts[head, posts_per_page]
     end
 
-    render json: @posts
+    render "api/show", locals: { posts: @posts }
   end
 end
