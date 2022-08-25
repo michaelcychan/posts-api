@@ -24,6 +24,17 @@ I want the posts to be shown in pages, each showing a number of posts, eg 10 pos
 
 <img src="./diagram.png">
 
+## Approach
+I chose Ruby on Rails because I want to try it out.  
+
+I first built the backend of the program, I first hardcode the api URL and ```puts``` the response to the console, just to make sure I can get the information.  After I can get a correct response, I used Postman to send http request to the backend to confirm my routing is correct. Also in the process I studied the type of each objects in the whole communication so that I can decide what functions I might be using in later stages.  
+
+After I am sure communication can go through from front end to back end, to the external api and back, then I started to implement the different functionalities.  
+
+Tag is the first parameter I implemented because it involves only manipulation of incoming requests and its String. After tag parameter is finished, I added the functionality of sorting with like numbers, then filtering with read numbers, as they increase in complexity. Lastly I implemented the pagination.  
+
+While the backend was being built, I also added a page in the frontend to show the result. I first just to show the response from the backend to make sure the data could pass through. After I confirmed the communication could go through, I put the received data into a table for easier viewing. Lastly I added some simple formatting and a backgroudn image.
+
 ## Installation and Running the server
 To install, first clone the git and install all dependencies:
 ```
