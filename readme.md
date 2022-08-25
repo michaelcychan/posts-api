@@ -2,7 +2,7 @@
 
 This is a tech test exercise to the [question](./question.md) here. This server receives requests from client and fetches data using an external API.  
 
-I used Ruby on Rails also as a practice of this framework.
+I used Ruby on Rails also as a practice of this framework. This exercise was completed in roughly one day.
 
 ## User Stories
 
