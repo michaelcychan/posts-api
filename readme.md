@@ -36,9 +36,9 @@ bin/rails server
 The termainal will now start the server  
   
 ### Features
-Use your browser to open http://localhost:3000
+Use your browser to open http://localhost:3000  
 
-<img src="./posts-api-1.png">
+<img src="./posts-api-1.png" width=750>
 
 If no tag parameter is given, a default tag: tech will be used. Different parameters can be added after ```http://localhost:3000/?```  
 
@@ -53,5 +53,5 @@ posts will be filtered with the minimum number of read
 ```?postCount=```
 only a certain number of posts is shown, if further posts is required, add ```?page=```
 
-Example:
-<img src="./posts-api-2.png">
+Example:  
+<img src="./posts-api-2.png" width=750>
