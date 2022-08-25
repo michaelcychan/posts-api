@@ -2,7 +2,7 @@
 
 This is a tech test exercise to the [question](./question.md) here. This server receives requests from client and fetches data using an external API.  
 
-I used Ruby on Rails also as a pratice of this framework.
+I used Ruby on Rails also as a practice of this framework.
 
 ## User Stories
 
@@ -53,5 +53,5 @@ posts will be filtered with the minimum number of read
 ```?postCount=```
 only a certain number of posts is shown, if further posts is required, add ```?page=```
 
-Example:  
+Example: ```?tag=history&postCount=5&page=3```   
 <img src="./posts-api-2.png" width=750>

@@ -14,9 +14,31 @@
  *= require_self
  */
 
+body {
+  margin: 10px;
+  padding: 10px;
+}
+
+body::after {
+  content: "";
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.4;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  min-height: 100%
+}
+
+
  table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 5px;
 }
+
+
 
