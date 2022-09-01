@@ -40,7 +40,9 @@ To install, first clone the git and install all dependencies:
 ```
 git clone https://github.com/michaelcychan/posts-api.git
 cd posts-api
-gem install
+bundle install
+
+bin/rails db:migrate RAILS_ENV=development
 
 bin/rails server
 ```
